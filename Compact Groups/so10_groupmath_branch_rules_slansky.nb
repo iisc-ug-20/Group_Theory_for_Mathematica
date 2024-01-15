@@ -1,0 +1,527 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     17036,        519]
+NotebookOptionsPosition[     15128,        477]
+NotebookOutlinePosition[     15537,        493]
+CellTagsIndexPosition[     15494,        490]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"<<", "GroupMath.m"}]], "Input",
+ CellChangeTimes->{{3.8979619797780657`*^9, 3.8979620069692936`*^9}, {
+  3.8979620672773123`*^9, 3.8979620690558715`*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"20588066-fb23-4777-8fef-666752cf9191"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "a", "shdw", 
+   "\"Symbol \\!\\(\\*RowBox[{\\\"\\\\\\\"a\\\\\\\"\\\"}]\\) appears in \
+multiple contexts \\!\\(\\*RowBox[{\\\"{\\\", \
+RowBox[{\\\"\\\\\\\"GroupMath`\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"Global`\\\\\\\"\\\"}], \\\"}\\\"}]\\); definitions in context \\!\
+\\(\\*RowBox[{\\\"\\\\\\\"GroupMath`\\\\\\\"\\\"}]\\) may shadow or be \
+shadowed by other definitions.\"", 2, 1, 1, 28608480810932272555, "Local", 
+   "GroupMath`a"},
+  "MessageTemplate2"]], "Message", "MSG",
+ CellChangeTimes->{{3.897961998625228*^9, 3.8979620074926033`*^9}, 
+   3.897962069366186*^9, 3.8979622058858414`*^9},
+ CellLabel->
+  "During evaluation of \
+In[1]:=",ExpressionUUID->"98eb3845-f916-4334-9949-1e403f51f706"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{
+    "We", " ", "employ", " ", "GroupMath", " ", "to", " ", "obtain", " ", 
+     "the", " ", "branching", " ", "rules", " ", "of", " ", "10"}], ",", " ", 
+    RowBox[{"16", " ", "and", " ", "45", " ", "for", " ", "SO", 
+     RowBox[{"(", "10", ")"}], " ", "under", " ", "SU", 
+     RowBox[{
+      RowBox[{"(", "5", ")"}], "\[TensorProduct]", " ", "U"}], 
+     RowBox[{"(", "1", ")"}]}]}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"DecomposeRep", "[", 
+   RowBox[{"SO10", ",", "10", ",", 
+    RowBox[{"{", 
+     RowBox[{"SU5", ",", "U1"}], "}"}]}], "]"}]}]], "Input",
+ CellLabel->"In[2]:=",ExpressionUUID->"7a9497f5-5310-4e30-b3bb-985b98789ed7"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ TemplateBox[{
+   StyleBox["\"There is only one way of embedding \"", {
+     GrayLevel[0.5]}, StripOnInput -> False], 
+   StyleBox["\"{SU5, U1}\"", {
+     RGBColor[
+      Rational[2, 3], 0, 0], Bold}, StripOnInput -> False], 
+   StyleBox["\" in \"", {
+     GrayLevel[0.5]}, StripOnInput -> False], 
+   StyleBox["\"{SO10}\"", {
+     RGBColor[
+      Rational[2, 3], 0, 0], Bold}, StripOnInput -> False], 
+   StyleBox["\".\"", {
+     GrayLevel[0.5]}, StripOnInput -> False]},
+  "RowDefault"]], "Print",
+ CellChangeTimes->{3.8979622097372046`*^9},
+ CellLabel->
+  "During evaluation of \
+In[2]:=",ExpressionUUID->"53811c3a-9afd-4c83-bbbf-18f6c38ff1e8"],
+
+Cell[BoxData[
+ TemplateBox[{
+   StyleBox["\"Under it the representation \"", {
+     GrayLevel[0.5]}, StripOnInput -> False], 
+   StyleBox["\"10\"", {
+     RGBColor[
+      Rational[2, 3], 0, 0], Bold}, StripOnInput -> False], 
+   StyleBox["\" = \"", {
+     RGBColor[
+      Rational[2, 3], 0, 0], Bold}, StripOnInput -> False], 
+   StyleBox["\"{{1, 0, 0, 0, 0}}\"", {
+     RGBColor[
+      Rational[2, 3], 0, 0], Bold}, StripOnInput -> False], 
+   StyleBox["\" decomposes as follows:\"", {
+     GrayLevel[0.5]}, StripOnInput -> False]},
+  "RowDefault"]], "Print",
+ CellChangeTimes->{3.897962209741925*^9},
+ CellLabel->
+  "During evaluation of \
+In[2]:=",ExpressionUUID->"812b077a-05cc-4f4e-ad38-03aa044008ee"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {
+     StyleBox["\<\"Embedding\"\>",
+      StripOnInput->False,
+      LineColor->RGBColor[
+        Rational[2, 3], 0, 0],
+      FrontFaceColor->RGBColor[
+        Rational[2, 3], 0, 0],
+      BackFaceColor->RGBColor[
+        Rational[2, 3], 0, 0],
+      GraphicsColor->RGBColor[
+        Rational[2, 3], 0, 0],
+      FontWeight->Bold,
+      FontColor->RGBColor[
+        Rational[2, 3], 0, 0]], 
+     StyleBox["\<\"Decomposition\"\>",
+      StripOnInput->False,
+      LineColor->RGBColor[
+        Rational[2, 3], 0, 0],
+      FrontFaceColor->RGBColor[
+        Rational[2, 3], 0, 0],
+      BackFaceColor->RGBColor[
+        Rational[2, 3], 0, 0],
+      GraphicsColor->RGBColor[
+        Rational[2, 3], 0, 0],
+      FontWeight->Bold,
+      FontColor->RGBColor[
+        Rational[2, 3], 0, 0]], "\[SpanFromLeft]"},
+    {
+     StyleBox["\<\"#1\"\>",
+      StripOnInput->False,
+      LineColor->RGBColor[
+        Rational[2, 3], 0, 0],
+      FrontFaceColor->RGBColor[
+        Rational[2, 3], 0, 0],
+      BackFaceColor->RGBColor[
+        Rational[2, 3], 0, 0],
+      GraphicsColor->RGBColor[
+        Rational[2, 3], 0, 0],
+      FontWeight->Bold,
+      FontColor->RGBColor[
+        Rational[2, 3], 0, 0]], 
+     RowBox[{
+      StyleBox["\<\"5\"\>",
+       StripOnInput->False,
+       FontWeight->Bold], 
+      "\[CircleTimes]", "\<\"\\!\\(\\*RowBox[{\\\"2\\\"}]\\)\"\>"}], 
+     RowBox[{
+      OverscriptBox[
+       StyleBox["\<\"5\"\>",
+        StripOnInput->False,
+        FontWeight->Bold], "_"], 
+      "\[CircleTimes]", "\<\"\\!\\(\\*RowBox[{\\\"-\\\", \\\"2\\\"}]\\)\"\>"}]}
+   },
+   AutoDelete->False,
+   GridBoxDividers->{"ColumnsIndexed" -> {1 -> {
+         GrayLevel[0.85], 
+         Thickness[Large]}, 2 -> {
+         GrayLevel[0.85], 
+         Thickness[Large]}, -1 -> {
+         GrayLevel[0.85], 
+         Thickness[Large]}, 3 -> GrayLevel[0.85]}, "RowsIndexed" -> {2 -> {
+         GrayLevel[0.85], 
+         Thickness[Large]}, 1 -> {
+         GrayLevel[0.85], 
+         Thickness[Large]}, -1 -> {
+         GrayLevel[0.85], 
+         Thickness[Large]}}},
+   GridBoxItemSize->{"Columns" -> {{All}}, "Rows" -> {{All}}}],
+  "Grid"]], "Print",
+ CellChangeTimes->{3.897962209747545*^9},
+ CellLabel->
+  "During evaluation of \
+In[2]:=",ExpressionUUID->"19b1a046-0ac8-4f31-88f6-05a444db2566"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DecomposeRep", "[", 
+  RowBox[{"SO10", ",", "16", ",", 
+   RowBox[{"{", 
+    RowBox[{"SU5", ",", "U1"}], "}"}]}], "]"}]], "Input",
+ CellLabel->"In[3]:=",ExpressionUUID->"6a2497cd-9468-44af-b123-1b2da1347f39"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ TemplateBox[{
+   StyleBox["\"There is only one way of embedding \"", {
+     GrayLevel[0.5]}, StripOnInput -> False], 
+   StyleBox["\"{SU5, U1}\"", {
+     RGBColor[
+      Rational[2, 3], 0, 0], Bold}, StripOnInput -> False], 
+   StyleBox["\" in \"", {
+     GrayLevel[0.5]}, StripOnInput -> False], 
+   StyleBox["\"{SO10}\"", {
+     RGBColor[
+      Rational[2, 3], 0, 0], Bold}, StripOnInput -> False], 
+   StyleBox["\".\"", {
+     GrayLevel[0.5]}, StripOnInput -> False]},
+  "RowDefault"]], "Print",
+ CellChangeTimes->{3.897962212083659*^9},
+ CellLabel->
+  "During evaluation of \
+In[3]:=",ExpressionUUID->"65f48f79-ace3-4111-90b9-a22e0e331287"],
+
+Cell[BoxData[
+ TemplateBox[{
+   StyleBox["\"Under it the representation \"", {
+     GrayLevel[0.5]}, StripOnInput -> False], 
+   StyleBox["\"16\"", {
+     RGBColor[
+      Rational[2, 3], 0, 0], Bold}, StripOnInput -> False], 
+   StyleBox["\" = \"", {
+     RGBColor[
+      Rational[2, 3], 0, 0], Bold}, StripOnInput -> False], 
+   StyleBox["\"{{0, 0, 0, 0, 1}}\"", {
+     RGBColor[
+      Rational[2, 3], 0, 0], Bold}, StripOnInput -> False], 
+   StyleBox["\" decomposes as follows:\"", {
+     GrayLevel[0.5]}, StripOnInput -> False]},
+  "RowDefault"]], "Print",
+ CellChangeTimes->{3.89796221215246*^9},
+ CellLabel->
+  "During evaluation of \
+In[3]:=",ExpressionUUID->"68099038-3219-414e-acdc-8230be8ead30"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {
+     StyleBox["\<\"Embedding\"\>",
+      StripOnInput->False,
+      LineColor->RGBColor[
+        Rational[2, 3], 0, 0],
+      FrontFaceColor->RGBColor[
+        Rational[2, 3], 0, 0],
+      BackFaceColor->RGBColor[
+        Rational[2, 3], 0, 0],
+      GraphicsColor->RGBColor[
+        Rational[2, 3], 0, 0],
+      FontWeight->Bold,
+      FontColor->RGBColor[
+        Rational[2, 3], 0, 0]], 
+     StyleBox["\<\"Decomposition\"\>",
+      StripOnInput->False,
+      LineColor->RGBColor[
+        Rational[2, 3], 0, 0],
+      FrontFaceColor->RGBColor[
+        Rational[2, 3], 0, 0],
+      BackFaceColor->RGBColor[
+        Rational[2, 3], 0, 0],
+      GraphicsColor->RGBColor[
+        Rational[2, 3], 0, 0],
+      FontWeight->Bold,
+      FontColor->RGBColor[
+        Rational[2, 3], 0, 0]], "\[SpanFromLeft]", "\[SpanFromLeft]"},
+    {
+     StyleBox["\<\"#1\"\>",
+      StripOnInput->False,
+      LineColor->RGBColor[
+        Rational[2, 3], 0, 0],
+      FrontFaceColor->RGBColor[
+        Rational[2, 3], 0, 0],
+      BackFaceColor->RGBColor[
+        Rational[2, 3], 0, 0],
+      GraphicsColor->RGBColor[
+        Rational[2, 3], 0, 0],
+      FontWeight->Bold,
+      FontColor->RGBColor[
+        Rational[2, 3], 0, 0]], 
+     RowBox[{
+      StyleBox["\<\"1\"\>",
+       StripOnInput->False,
+       FontWeight->Bold], 
+      "\[CircleTimes]", "\<\"\\!\\(\\*RowBox[{\\\"-\\\", \
+\\\"5\\\"}]\\)\"\>"}], 
+     RowBox[{
+      OverscriptBox[
+       StyleBox["\<\"5\"\>",
+        StripOnInput->False,
+        FontWeight->Bold], "_"], 
+      "\[CircleTimes]", "\<\"\\!\\(\\*RowBox[{\\\"3\\\"}]\\)\"\>"}], 
+     RowBox[{
+      StyleBox["\<\"10\"\>",
+       StripOnInput->False,
+       FontWeight->Bold], 
+      "\[CircleTimes]", "\<\"\\!\\(\\*RowBox[{\\\"-\\\", \\\"1\\\"}]\\)\"\>"}]}
+   },
+   AutoDelete->False,
+   GridBoxDividers->{"ColumnsIndexed" -> {1 -> {
+         GrayLevel[0.85], 
+         Thickness[Large]}, 2 -> {
+         GrayLevel[0.85], 
+         Thickness[Large]}, -1 -> {
+         GrayLevel[0.85], 
+         Thickness[Large]}, 3 -> GrayLevel[0.85], 4 -> GrayLevel[0.85]}, 
+     "RowsIndexed" -> {2 -> {
+         GrayLevel[0.85], 
+         Thickness[Large]}, 1 -> {
+         GrayLevel[0.85], 
+         Thickness[Large]}, -1 -> {
+         GrayLevel[0.85], 
+         Thickness[Large]}}},
+   GridBoxItemSize->{"Columns" -> {{All}}, "Rows" -> {{All}}}],
+  "Grid"]], "Print",
+ CellChangeTimes->{3.8979622121581993`*^9},
+ CellLabel->
+  "During evaluation of \
+In[3]:=",ExpressionUUID->"b70fafb0-ab1b-44df-ad2d-fa70591c16ae"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DecomposeRep", "[", 
+  RowBox[{"SO10", ",", "45", ",", 
+   RowBox[{"{", 
+    RowBox[{"SU5", ",", "U1"}], "}"}]}], "]"}]], "Input",
+ CellLabel->"In[4]:=",ExpressionUUID->"011f24d0-99a8-48d4-946d-942eff076653"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ TemplateBox[{
+   StyleBox["\"There is only one way of embedding \"", {
+     GrayLevel[0.5]}, StripOnInput -> False], 
+   StyleBox["\"{SU5, U1}\"", {
+     RGBColor[
+      Rational[2, 3], 0, 0], Bold}, StripOnInput -> False], 
+   StyleBox["\" in \"", {
+     GrayLevel[0.5]}, StripOnInput -> False], 
+   StyleBox["\"{SO10}\"", {
+     RGBColor[
+      Rational[2, 3], 0, 0], Bold}, StripOnInput -> False], 
+   StyleBox["\".\"", {
+     GrayLevel[0.5]}, StripOnInput -> False]},
+  "RowDefault"]], "Print",
+ CellChangeTimes->{3.897962214388055*^9},
+ CellLabel->
+  "During evaluation of \
+In[4]:=",ExpressionUUID->"9293f902-4588-462a-a766-d516c3a034fe"],
+
+Cell[BoxData[
+ TemplateBox[{
+   StyleBox["\"Under it the representation \"", {
+     GrayLevel[0.5]}, StripOnInput -> False], 
+   StyleBox["\"45\"", {
+     RGBColor[
+      Rational[2, 3], 0, 0], Bold}, StripOnInput -> False], 
+   StyleBox["\" = \"", {
+     RGBColor[
+      Rational[2, 3], 0, 0], Bold}, StripOnInput -> False], 
+   StyleBox["\"{{0, 1, 0, 0, 0}}\"", {
+     RGBColor[
+      Rational[2, 3], 0, 0], Bold}, StripOnInput -> False], 
+   StyleBox["\" decomposes as follows:\"", {
+     GrayLevel[0.5]}, StripOnInput -> False]},
+  "RowDefault"]], "Print",
+ CellChangeTimes->{3.897962214438384*^9},
+ CellLabel->
+  "During evaluation of \
+In[4]:=",ExpressionUUID->"9da7dd52-e072-4e3b-9a16-b92ba70cf663"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {
+     StyleBox["\<\"Embedding\"\>",
+      StripOnInput->False,
+      LineColor->RGBColor[
+        Rational[2, 3], 0, 0],
+      FrontFaceColor->RGBColor[
+        Rational[2, 3], 0, 0],
+      BackFaceColor->RGBColor[
+        Rational[2, 3], 0, 0],
+      GraphicsColor->RGBColor[
+        Rational[2, 3], 0, 0],
+      FontWeight->Bold,
+      FontColor->RGBColor[
+        Rational[2, 3], 0, 0]], 
+     StyleBox["\<\"Decomposition\"\>",
+      StripOnInput->False,
+      LineColor->RGBColor[
+        Rational[2, 3], 0, 0],
+      FrontFaceColor->RGBColor[
+        Rational[2, 3], 0, 0],
+      BackFaceColor->RGBColor[
+        Rational[2, 3], 0, 0],
+      GraphicsColor->RGBColor[
+        Rational[2, 3], 0, 0],
+      FontWeight->Bold,
+      FontColor->RGBColor[
+        Rational[2, 3], 0, 0]], "\[SpanFromLeft]", "\[SpanFromLeft]", 
+     "\[SpanFromLeft]"},
+    {
+     StyleBox["\<\"#1\"\>",
+      StripOnInput->False,
+      LineColor->RGBColor[
+        Rational[2, 3], 0, 0],
+      FrontFaceColor->RGBColor[
+        Rational[2, 3], 0, 0],
+      BackFaceColor->RGBColor[
+        Rational[2, 3], 0, 0],
+      GraphicsColor->RGBColor[
+        Rational[2, 3], 0, 0],
+      FontWeight->Bold,
+      FontColor->RGBColor[
+        Rational[2, 3], 0, 0]], 
+     RowBox[{
+      StyleBox["\<\"24\"\>",
+       StripOnInput->False,
+       FontWeight->Bold], 
+      "\[CircleTimes]", "\<\"\\!\\(\\*RowBox[{\\\"0\\\"}]\\)\"\>"}], 
+     RowBox[{
+      StyleBox["\<\"1\"\>",
+       StripOnInput->False,
+       FontWeight->Bold], 
+      "\[CircleTimes]", "\<\"\\!\\(\\*RowBox[{\\\"0\\\"}]\\)\"\>"}], 
+     RowBox[{
+      StyleBox["\<\"10\"\>",
+       StripOnInput->False,
+       FontWeight->Bold], 
+      "\[CircleTimes]", "\<\"\\!\\(\\*RowBox[{\\\"4\\\"}]\\)\"\>"}], 
+     RowBox[{
+      OverscriptBox[
+       StyleBox["\<\"10\"\>",
+        StripOnInput->False,
+        FontWeight->Bold], "_"], 
+      "\[CircleTimes]", "\<\"\\!\\(\\*RowBox[{\\\"-\\\", \\\"4\\\"}]\\)\"\>"}]}
+   },
+   AutoDelete->False,
+   GridBoxDividers->{"ColumnsIndexed" -> {1 -> {
+         GrayLevel[0.85], 
+         Thickness[Large]}, 2 -> {
+         GrayLevel[0.85], 
+         Thickness[Large]}, -1 -> {
+         GrayLevel[0.85], 
+         Thickness[Large]}, 3 -> GrayLevel[0.85], 4 -> GrayLevel[0.85], 5 -> 
+       GrayLevel[0.85]}, "RowsIndexed" -> {2 -> {
+         GrayLevel[0.85], 
+         Thickness[Large]}, 1 -> {
+         GrayLevel[0.85], 
+         Thickness[Large]}, -1 -> {
+         GrayLevel[0.85], 
+         Thickness[Large]}}},
+   GridBoxItemSize->{"Columns" -> {{All}}, "Rows" -> {{All}}}],
+  "Grid"]], "Print",
+ CellChangeTimes->{3.897962214441101*^9},
+ CellLabel->
+  "During evaluation of \
+In[4]:=",ExpressionUUID->"d060b4f1-fa26-4093-b798-3bae70b4e958"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "The", " ", "branching", " ", "rules", " ", "above", " ", "match", " ", 
+    "and", " ", "correspond", " ", "with", " ", "those", " ", "given", " ", 
+    "in", " ", 
+    RowBox[{"Slansky", "'"}], "s", " ", "tables"}], " ", "*)"}], 
+  "\[IndentingNewLine]"}]], "Input",ExpressionUUID->"07bef4f3-8170-45bc-8edf-\
+ae06df141e97"]
+},
+WindowSize->{1141.2, 568.8},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"12.2 for Microsoft Windows (64-bit) (December 12, 2020)",
+StyleDefinitions->"CMU Article.nb",
+ExpressionUUID->"0447dd8f-2fe0-401b-9510-ee7962b5860d"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 256, 4, 28, "Input",ExpressionUUID->"20588066-fb23-4777-8fef-666752cf9191"],
+Cell[839, 28, 734, 15, 24, "Message",ExpressionUUID->"98eb3845-f916-4334-9949-1e403f51f706"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1610, 48, 715, 16, 49, "Input",ExpressionUUID->"7a9497f5-5310-4e30-b3bb-985b98789ed7"],
+Cell[CellGroupData[{
+Cell[2350, 68, 661, 18, 21, "Print",ExpressionUUID->"53811c3a-9afd-4c83-bbbf-18f6c38ff1e8"],
+Cell[3014, 88, 706, 19, 21, "Print",ExpressionUUID->"812b077a-05cc-4f4e-ad38-03aa044008ee"],
+Cell[3723, 109, 2324, 74, 53, "Print",ExpressionUUID->"19b1a046-0ac8-4f31-88f6-05a444db2566"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6096, 189, 232, 5, 28, "Input",ExpressionUUID->"6a2497cd-9468-44af-b123-1b2da1347f39"],
+Cell[CellGroupData[{
+Cell[6353, 198, 659, 18, 21, "Print",ExpressionUUID->"65f48f79-ace3-4111-90b9-a22e0e331287"],
+Cell[7015, 218, 705, 19, 21, "Print",ExpressionUUID->"68099038-3219-414e-acdc-8230be8ead30"],
+Cell[7723, 239, 2554, 81, 53, "Print",ExpressionUUID->"b70fafb0-ab1b-44df-ad2d-fa70591c16ae"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10326, 326, 232, 5, 28, "Input",ExpressionUUID->"011f24d0-99a8-48d4-946d-942eff076653"],
+Cell[CellGroupData[{
+Cell[10583, 335, 659, 18, 21, "Print",ExpressionUUID->"9293f902-4588-462a-a766-d516c3a034fe"],
+Cell[11245, 355, 706, 19, 21, "Print",ExpressionUUID->"9da7dd52-e072-4e3b-9a16-b92ba70cf663"],
+Cell[11954, 376, 2757, 86, 53, "Print",ExpressionUUID->"d060b4f1-fa26-4093-b798-3bae70b4e958"]
+}, Open  ]]
+}, Open  ]],
+Cell[14738, 466, 386, 9, 49, "Input",ExpressionUUID->"07bef4f3-8170-45bc-8edf-ae06df141e97"]
+}
+]
+*)
+

@@ -1,0 +1,155 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4932,        145]
+NotebookOptionsPosition[      4577,        131]
+NotebookOutlinePosition[      4978,        147]
+CellTagsIndexPosition[      4935,        144]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"SU4Gen", "=", 
+   RowBox[{"Join", "[", 
+    RowBox[{
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"BlockDiagonalMatrix", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"PauliMatrix", "[", "i", "]"}], ",", " ", 
+           RowBox[{"DiagonalMatrix", "[", 
+            RowBox[{"{", 
+             RowBox[{"0", ",", "0"}], "}"}], "]"}]}], "}"}], "]"}], "//", 
+        "Normal"}], ",", " ", 
+       RowBox[{"{", 
+        RowBox[{"i", ",", " ", "1", ",", " ", "3"}], "}"}]}], "]"}], ",", " ", 
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"KroneckerProduct", "[", 
+        RowBox[{
+         RowBox[{"PauliMatrix", "[", "i", "]"}], ",", " ", 
+         RowBox[{"DiagonalMatrix", "[", 
+          RowBox[{"{", 
+           RowBox[{"1", ",", "0"}], "}"}], "]"}]}], "]"}], ",", " ", 
+       RowBox[{"{", 
+        RowBox[{"i", ",", " ", "2"}], "}"}]}], "]"}], ",", " ", 
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"BlockDiagonalMatrix", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"{", "0", "}"}], "}"}], ",", " ", 
+           RowBox[{"PauliMatrix", "[", "i", "]"}], ",", " ", 
+           RowBox[{"{", 
+            RowBox[{"{", "0", "}"}], "}"}]}], "}"}], "]"}], "//", "Normal"}], 
+       ",", " ", 
+       RowBox[{"{", 
+        RowBox[{"i", ",", "2"}], "}"}]}], "]"}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+        FractionBox["1", 
+         RowBox[{"Sqrt", "[", "3", "]"}]], 
+        RowBox[{"DiagonalMatrix", "[", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", "1", ",", 
+           RowBox[{"-", "2"}], ",", "0"}], "}"}], "]"}]}], ",", " ", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0", ",", "0", ",", "1"}], "}"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0", ",", "0", ",", "0"}], "}"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0", ",", "0", ",", "0"}], "}"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", "0", ",", "0", ",", "0"}], "}"}]}], "}"}], ",", 
+       " ", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0", ",", "0", ",", 
+           RowBox[{"-", "I"}]}], "}"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0", ",", "0", ",", "0"}], "}"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0", ",", "0", ",", "0"}], "}"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"I", ",", "0", ",", "0", ",", "0"}], "}"}]}], "}"}]}], 
+      "}"}], ",", " ", 
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"KroneckerProduct", "[", 
+        RowBox[{
+         RowBox[{"PauliMatrix", "[", "i", "]"}], ",", " ", 
+         RowBox[{"DiagonalMatrix", "[", 
+          RowBox[{"{", 
+           RowBox[{"0", ",", "1"}], "}"}], "]"}]}], "]"}], ",", " ", 
+       RowBox[{"{", 
+        RowBox[{"i", ",", " ", "2"}], "}"}]}], "]"}], ",", " ", 
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"BlockDiagonalMatrix", "[", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"{", "0", "}"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"{", "0", "}"}], "}"}], ",", " ", 
+           RowBox[{"PauliMatrix", "[", "i", "]"}]}], "}"}], "]"}], "//", 
+        "Normal"}], ",", " ", 
+       RowBox[{"{", 
+        RowBox[{"i", ",", "2"}], "}"}]}], "]"}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["1", 
+        RowBox[{"Sqrt", "[", "6", "]"}]], 
+       RowBox[{"DiagonalMatrix", "[", 
+        RowBox[{"{", 
+         RowBox[{"1", ",", "1", ",", "1", ",", 
+          RowBox[{"-", "3"}]}], "}"}], "]"}]}], "}"}]}], "]"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.9035859571700845`*^9, 3.903586127376732*^9}, {
+  3.9035865851375055`*^9, 3.9035866457052345`*^9}},
+ CellLabel->"In[59]:=",ExpressionUUID->"9730a016-8e30-41bf-a646-8972689b6d1e"]
+},
+WindowSize->{748, 725.5},
+WindowMargins->{{14, Automatic}, {Automatic, 22.5}},
+FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (June 3, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"c45fb337-c4ec-4b9c-a0c5-f37cd25e123a"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 4015, 109, 258, "Input",ExpressionUUID->"9730a016-8e30-41bf-a646-8972689b6d1e"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
