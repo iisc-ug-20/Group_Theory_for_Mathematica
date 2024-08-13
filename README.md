@@ -5,7 +5,7 @@
 
   Group Theory has become an invaluable tool in the physics community. Despite numerous introductory books, the subject remains challenging for beginners. Mathematica has emerged as a popular tool for research and education, offering various packages and built-in tools for Group Theory. However, these resources are often too scattered for effective educational use. This work aims to provide a comprehensive source to help beginning students grasp Group Theory concepts and their applications from a physicist's perspective, while also building familiarity with symbolic language. We present several example notebooks that succinctly cover well-known theories and demonstrate specific concepts, which can be easily adapted for educational purposes. We provide basic examples on finite, compact and non-compact groups, and motivate the use of these concepts in solving physics problems such as addition of angular momenta, modelling a system of qubits and the description of spacetime transformations. 
 
-### Published in _The European Journal of Physics Special Topics_
+### Published in _The European Physical Journal Special Topics_
 
 ### **arXiv link**: https://arxiv.org/abs/arXiv:2408.01441 [physics.ed-ph]
 ### **DOI**: https://doi.org/10.1140/epjs/s11734-024-01245-9
